@@ -17,7 +17,6 @@ describe "Song Forms" do
       it "creates a new artist on submit" do
         expect {
           fill_in "Name", with: song_name
-          binding.pry
           check "New Age Garbage"
           fill_in "Artist Name", with: artist_name
           click_on "Create"
